@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations Intensives - KAMskills E-Academy</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .trainer {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .trainer img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            float: left;
+            margin-right: 20px;
+        }
+        .trainer-info {
+            overflow: hidden;
+        }
+        form {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Formations Intensives KAMskills E-Academy</h1>
+        <p>Une semaine pour développer vos compétences</p>
+        <a href="#inscription" class="cta-button">S'inscrire maintenant</a>
+    </header>
+
+    <div class="container">
+        <section id="presentation" class="section">
+            <h2>Nos Formations Intensives</h2>
+            <p>KAMskills E-Academy propose trois formations intensives d'une semaine, chacune animée par un expert dans son domaine. Choisissez la formation qui correspond le mieux à vos objectifs professionnels.</p>
+        </section>
+
+        <section id="trainers" class="section">
+            <h2>Nos Formateurs et leurs Formations</h2>
+            
+            <div class="trainer">
+                <img src="/api/placeholder/150/150" alt="Formateur 1">
+                <div class="trainer-info">
+                    <h3>[Nom du formateur 1]</h3>
+                    <h4>Formation : [Nom de la formation 1]</h4>
+                    <p><strong>Expertise :</strong> [Domaine d'expertise du formateur 1]</p>
+                    <p><strong>Description de la formation :</strong> [Brève description de la formation 1, ses objectifs et ses bénéfices]</p>
+                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
+                </div>
+            </div>
+
+            <div class="trainer">
+                <img src="/api/placeholder/150/150" alt="Formateur 2">
+                <div class="trainer-info">
+                    <h3>[Nom du formateur 2]</h3>
+                    <h4>Formation : [Nom de la formation 2]</h4>
+                    <p><strong>Expertise :</strong> [Domaine d'expertise du formateur 2]</p>
+                    <p><strong>Description de la formation :</strong> [Brève description de la formation 2, ses objectifs et ses bénéfices]</p>
+                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
+                </div>
+            </div>
+
+            <div class="trainer">
+                <img src="/api/placeholder/150/150" alt="Formateur 3">
+                <div class="trainer-info">
+                    <h3>[Nom du formateur 3]</h3>
+                    <h4>Formation : [Nom de la formation 3]</h4>
+                    <p><strong>Expertise :</strong> [Domaine d'expertise du formateur 3]</p>
+                    <p><strong>Description de la formation :</strong> [Brève description de la formation 3, ses objectifs et ses bénéfices]</p>
+                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>À propos de KAMskills E-Academy</h2>
+            <p>KAMskills E-Academy est spécialisée dans la formation professionnelle intensive. Notre approche unique combine :</p>
+            <ul>
+                <li>Des formateurs experts dans leur domaine</li>
+                <li>Des programmes intensifs d'une semaine pour des résultats rapides</li>
+                <li>Une méthodologie pratique axée sur l'application immédiate des compétences</li>
+            </ul>
+            <p>Depuis notre création, nous avons formé plus de [nombre] professionnels, avec un taux de satisfaction de [pourcentage]%.</p>
+        </section>
+
+        <section id="inscription" class="section">
+            <h2>Inscription à une Formation</h2>
+            <form id="inscription-form">
+                <input type="text" name="nom" placeholder="Nom complet" required>
+                <input type="email" name="email" placeholder="Adresse e-mail" required>
+                <input type="tel" name="telephone" placeholder="Numéro de téléphone">
+                <select name="formation" required>
+                    <option value="">Choisissez votre formation</option>
+                    <option value="formation1">[Nom de la formation 1]</option>
+                    <option value="formation2">[Nom de la formation 2]</option>
+                    <option value="formation3">[Nom de la formation 3]</option>
+                </select>
+                <textarea name="attentes" placeholder="Vos attentes pour cette formation"></textarea>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Contactez-nous : info@kamskills.com | Tél : +33 1 23 45 67 89</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 KAMskills E-Academy. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('inscription-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Ici, vous ajouteriez normalement le code pour envoyer les données du formulaire à votre serveur
+        alert('Merci pour votre inscription ! Nous vous contacterons bientôt avec plus de détails sur la formation choisie.');
+        this.reset();
+    });
+    </script>
+</body>
+</html>
