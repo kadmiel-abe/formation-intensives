@@ -12,32 +12,43 @@
             color: #333;
         }
         header {
-            background: #282c34;
+            background: #61dafb;
             color: #fff;
-            padding: 20px 0;
+            padding: 40px 20px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
         }
         .cta-button {
             display: inline-block;
-            background: #61dafb;
+            background: #282c34;
             color: #fff;
-            padding: 12px 25px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 8px;
-            font-size: 18px;
-            margin-top: 10px;
-            transition: background 0.3s ease;
+            font-size: 20px;
+            margin-top: 20px;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
         .cta-button:hover {
-            background: #21a1f1;
+            background: #333;
+            transform: scale(1.05);
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
-            padding: 20px;
+            padding: 20px 0;
         }
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
         .trainer {
             background: #f4f4f4;
@@ -47,12 +58,13 @@
             margin-bottom: 30px;
             display: flex;
             align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .trainer img {
             border-radius: 50%;
             object-fit: cover;
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             margin-right: 20px;
         }
         .trainer-info {
@@ -61,34 +73,44 @@
         .trainer-info h3 {
             margin: 0 0 10px;
             color: #61dafb;
+            font-size: 1.5em;
         }
         .trainer-info h4 {
             margin: 0 0 10px;
             color: #555;
+            font-size: 1.2em;
         }
         .trainer-info p {
             margin: 0 0 10px;
+            line-height: 1.6;
         }
         footer {
             background: #282c34;
             color: #fff;
             text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        footer p {
+            margin: 10px 0;
         }
         .social-links a {
             color: #fff;
-            margin: 0 10px;
-            font-size: 24px;
+            margin: 0 15px;
+            font-size: 28px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #61dafb;
         }
         iframe {
             width: 100%;
-            max-width: 640px;
+            max-width: 800px;
             height: 600px;
             border: none;
-            margin: 20px auto;
+            margin: 30px auto;
             display: block;
         }
     </style>
@@ -96,8 +118,8 @@
 </head>
 <body>
     <header>
-        <h1>Formations Intensives - KAMskills E-Academy</h1>
-        <p>Une semaine pour développer vos compétences</p>
+        <h1>Formations Intensives</h1>
+        <p>KAMskills E-Academy</p>
         <a href="#inscription" class="cta-button">S'inscrire maintenant</a>
     </header>
 
@@ -108,8 +130,8 @@
         </section>
 
         <section id="trainers" class="section">
-            <h2>Nos Formateurs et leurs Formations</h2>
-
+            <h2>Nos Formateurs</h2>
+            <!-- Formateurs Section -->
             <div class="trainer">
                 <img src="https://drive.google.com/uc?id=1AOyL4D99I-6JaP5R8Ff1dJTyWkRFFBzW" alt="Formateur 1">
                 <div class="trainer-info">
@@ -117,26 +139,6 @@
                     <h4>Formation : Développement web</h4>
                     <p><strong>Expertise :</strong> Programmation</p>
                     <p><strong>Description de la formation :</strong> Cette formation intensive d'une semaine en développement web est conçue pour vous fournir les compétences nécessaires pour créer et gérer des sites web dynamiques et modernes.</p>
-                </div>
-            </div>
-
-            <div class="trainer">
-                <img src="https://drive.google.com/uc?id=11sDKuoxov39pERYfqo0tGH0JsFETltUU" alt="Formateur 2">
-                <div class="trainer-info">
-                    <h3>M. Sidjane</h3>
-                    <h4>Formation : Initiation à la création 3D</h4>
-                    <p><strong>Expertise :</strong> Arts numériques et conception visuelle</p>
-                    <p><strong>Description de la formation :</strong> Cette formation en modélisation et animation 3D vous plonge dans l'univers des arts numériques, où vous apprendrez à créer des objets, des personnages, et des environnements en 3D.</p>
-                </div>
-            </div>
-
-            <div class="trainer">
-                <img src="https://drive.google.com/uc?id=1DVIGucZD43II9Wk_QVkUcPNlYaktzLRV" alt="Formateur 3">
-                <div class="trainer-info">
-                    <h3>M. ABE</h3>
-                    <h4>Formation : Introduction à l'Intelligence Artificielle et ses Applications</h4>
-                    <p><strong>Expertise :</strong> Intelligence Artificielle (IA)</p>
-                    <p><strong>Description de la formation :</strong> Cette formation vous introduira aux concepts de base de l'intelligence artificielle, en explorant ses applications dans divers domaines comme l'automatisation, le traitement du langage naturel, et la reconnaissance d'images.</p>
                 </div>
             </div>
         </section>
@@ -161,7 +163,7 @@
 
     <footer>
         <div class="container">
-            <p>Contactez-nous : kadmielabe@gmail.com | Tél : +2550140398876</p>
+            <p>Contactez-nous : <a href="mailto:kadmielabe@gmail.com">kadmielabe@gmail.com</a> | Tél : <a href="tel:+2550140398876">+2550140398876</a></p>
             <div class="social-links">
                 <a href="https://wa.me/2550140398876" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
