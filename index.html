@@ -54,26 +54,6 @@
         .trainer-info {
             overflow: hidden;
         }
-        form {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        input, textarea, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        button {
-            background: #ff6600;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
         footer {
             background: #333;
             color: #fff;
@@ -85,6 +65,20 @@
             color: #fff;
             margin: 0 10px;
             font-size: 24px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 1759px;
+            border: none;
+            margin: 20px auto;
+            display: block;
+        }
+        .formation-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            display: block;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
@@ -104,39 +98,39 @@
 
         <section id="trainers" class="section">
             <h2>Nos Formateurs et leurs Formations</h2>
-            
-            <div class="trainer">
-                <img src="/api/placeholder/150/150" alt="Formateur 1">
-                <div class="trainer-info">
-                    <h3>[Mr kouassi]</h3>
-                    <h4>Formation : [developpement web]</h4>
-                    <p><strong>Expertise :</strong> [Programmation]</p>
-                    <p><strong>Description de la formation :</strong> [Cette formation intensive d'une semaine en développement web est conçue pour vous fournir les compétences nécessaires pour créer et gérer des sites web dynamiques et modernes. ]</p>
-                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
-                </div>
-            </div>
 
             <div class="trainer">
-                <img src="/api/placeholder/150/150" alt="Formateur 2">
+                <img src="https://drive.google.com/uc?id=1AOyL4D99I-6JaP5R8Ff1dJTyWkRFFBzW" alt="Formateur 1">
                 <div class="trainer-info">
-                    <h3>[Mr Sidjane]</h3>
-                    <h4>Formation : [initiation à la création 3D]</h4>
-                    <p><strong>Expertise :</strong> [arts numériques et de la conception visuelle.]</p>
-                    <p><strong>Description de la formation :</strong> [Cette formation en modélisation et animation 3D vous plonge dans l'univers des arts numériques, où vous apprendrez à créer des objets, des personnages, et des environnements en 3D.]</p>
-                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
+                    <h3>M. Kouassi</h3>
+                    <h4>Formation : Développement web</h4>
+                    <p><strong>Expertise :</strong> Programmation</p>
+                    <p><strong>Description de la formation :</strong> Cette formation intensive d'une semaine en développement web est conçue pour vous fournir les compétences nécessaires pour créer et gérer des sites web dynamiques et modernes. </p>
                 </div>
             </div>
+            <img src="/api/placeholder/800/600" alt="Développeur travaillant sur du code" class="formation-image">
 
             <div class="trainer">
-                <img src="/api/placeholder/150/150" alt="Formateur 3">
+                <img src="https://drive.google.com/uc?id=11sDKuoxov39pERYfqo0tGH0JsFETltUU" alt="Formateur 2">
                 <div class="trainer-info">
-                    <h3>[Mr ABE]</h3>
-                    <h4>Formation : [Introduction à l'Intelligence Artificielle et ses Applications]</h4>
-                    <p><strong>Expertise :</strong> [Intelligence Artificielle (IA)]</p>
-                    <p><strong>Description de la formation :</strong> [Cette formation vous introduira aux concepts de base de l'intelligence artificielle, en explorant ses applications dans divers domaines comme l'automatisation, le traitement du langage naturel, et la reconnaissance d'images.]</p>
-                    <a href="#inscription" class="cta-button">S'inscrire à cette formation</a>
+                    <h3>M. Sidjane</h3>
+                    <h4>Formation : Initiation à la création 3D</h4>
+                    <p><strong>Expertise :</strong> Arts numériques et conception visuelle</p>
+                    <p><strong>Description de la formation :</strong> Cette formation en modélisation et animation 3D vous plonge dans l'univers des arts numériques, où vous apprendrez à créer des objets, des personnages, et des environnements en 3D.</p>
                 </div>
             </div>
+            <img src="/api/placeholder/800/600" alt="Modèle 3D d'un personnage" class="formation-image">
+
+            <div class="trainer">
+                <img src="https://drive.google.com/uc?id=1DVIGucZD43II9Wk_QVkUcPNlYaktzLRV" alt="Formateur 3">
+                <div class="trainer-info">
+                    <h3>M. ABE</h3>
+                    <h4>Formation : Introduction à l'Intelligence Artificielle et ses Applications</h4>
+                    <p><strong>Expertise :</strong> Intelligence Artificielle (IA)</p>
+                    <p><strong>Description de la formation :</strong> Cette formation vous introduira aux concepts de base de l'intelligence artificielle, en explorant ses applications dans divers domaines comme l'automatisation, le traitement du langage naturel, et la reconnaissance d'images.</p>
+                </div>
+            </div>
+            <img src="/api/placeholder/800/600" alt="Concept d'Intelligence Artificielle" class="formation-image">
         </section>
 
         <section id="about" class="section">
@@ -152,46 +146,19 @@
 
         <section id="inscription" class="section">
             <h2>Inscription à une Formation</h2>
-            
-            <!-- Ajout du formulaire Google Forms ici -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHsCPYBEA-yKMWgpwUtUCrBgXc8XnUuvLZkM6UrFp3naXVIA/viewform?embedded=true" width="640" height="1570" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
-
-            <!-- Formulaire existant -->
-            <form id="inscription-form">
-                <input type="text" name="nom" placeholder="Nom complet" required>
-                <input type="email" name="email" placeholder="Adresse e-mail" required>
-                <input type="tel" name="telephone" placeholder="Numéro de téléphone">
-                <select name="formation" required>
-                    <option value="">Choisissez votre formation</option>
-                    <option value="formation1">[developpement web]</option>
-                    <option value="formation2">[initiation à la création 3D]</option>
-                    <option value="formation3">[Intelligence Artificielle (IA)]</option>
-                </select>
-                <textarea name="attentes" placeholder="Vos attentes pour cette formation"></textarea>
-                <button type="submit">S'inscrire</button>
-            </form>
+            <p>Pour vous inscrire à l'une de nos formations intensives, veuillez remplir le formulaire ci-dessous :</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHsCPYBEA-yKMWgpwUtUCrBgXc8XnUuvLZkM6UrFp3naXVIA/viewform?embedded=true">Chargement…</iframe>
         </section>
     </div>
 
     <footer>
-    <div class="container">
-        <p>Contactez-nous : kadmielabe@gmail.com | Tél : +2550140398876</p>
-        <div class="social-links">
-            <a href="https://wa.me/2550140398876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <div class="container">
+            <p>Contactez-nous : kadmielabe@gmail.com | Tél : +2550140398876</p>
+            <div class="social-links">
+                <a href="https://wa.me/2550140398876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 KAMskills E-Academy. Tous droits réservés.</p>
         </div>
-        <p>&copy; 2024 KAMskills E-Academy. Tous droits réservés.</p>
-    </div>
-</footer>
-
-
-
-    <script>
-    document.getElementById('inscription-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        // Ici, vous ajouteriez normalement le code pour envoyer les données du formulaire à votre serveur
-        alert('Merci pour votre inscription ! Nous vous contacterons bientôt avec plus de détails sur la formation choisie.');
-        this.reset();
-    });
-    </script>
+    </footer>
 </body>
 </html>
