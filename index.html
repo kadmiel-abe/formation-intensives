@@ -26,21 +26,29 @@
             display: inline-block;
             background: #ff6600;
             color: #fff;
-            padding: 8px 16px;
+            padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px;
-            margin-top: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e65c00;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
         }
         .trainer {
-            background: #f9f9f9;
+            background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 15px;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         .trainer img {
             width: 120px;
@@ -57,8 +65,8 @@
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 8px;
-            margin-top: 15px;
+            padding: 15px 0;
+            margin-top: 30px;
         }
         .social-links a {
             color: #fff;
@@ -72,6 +80,19 @@
             border: none;
             margin: 15px auto;
             display: block;
+        }
+        @media (max-width: 768px) {
+            .trainer img {
+                width: 100px;
+                height: 100px;
+            }
+            .cta-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            header {
+                padding: 1rem;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
@@ -93,24 +114,33 @@
             <h2>Nos Formateurs et leurs Formations</h2>
 
             <div class="trainer">
-                <h3>Mr. Kouassi</h3>
-                <h4>Formation : Développement web</h4>
-                <p><strong>Expertise :</strong> Programmation</p>
-                <p><strong>Description de la formation :</strong>Cette formation intensive d'une semaine en développement web...</p>
+                <img src="trainer1.jpg" alt="Mr. Kouassi">
+                <div class="trainer-info">
+                    <h3>Mr. Kouassi</h3>
+                    <h4>Formation : Développement web</h4>
+                    <p><strong>Expertise :</strong> Programmation</p>
+                    <p><strong>Description de la formation :</strong> Cette formation intensive d'une semaine en développement web...</p>
+                </div>
             </div>
 
             <div class="trainer">
-                <h3>Mr. Sidjane</h3>
-                <h4>Formation : Initiation à la création 3D</h4>
-                <p><strong>Expertise :</strong> Arts numériques et conception visuelle</p>
-                <p><strong>Description de la formation :</strong>Cette formation en modélisation et animation 3D...</p>
+                <img src="trainer2.jpg" alt="Mr. Sidjane">
+                <div class="trainer-info">
+                    <h3>Mr. Sidjane</h3>
+                    <h4>Formation : Initiation à la création 3D</h4>
+                    <p><strong>Expertise :</strong> Arts numériques et conception visuelle</p>
+                    <p><strong>Description de la formation :</strong> Cette formation en modélisation et animation 3D...</p>
+                </div>
             </div>
 
             <div class="trainer">
-                <h3>Mr. ABE</h3>
-                <h4>Formation : Introduction à l'Intelligence Artificielle...</h4>
-                <p><strong>Expertise :</strong> Intelligence Artificielle (IA)</p>
-                <p><strong>Description de la formation :</strong>Cette formation vous initiera aux concepts fondamentaux de l'intelligence artificielle...</p>
+                <img src="trainer3.jpg" alt="Mr. ABE">
+                <div class="trainer-info">
+                    <h3>Mr. ABE</h3>
+                    <h4>Formation : Introduction à l'Intelligence Artificielle...</h4>
+                    <p><strong>Expertise :</strong> Intelligence Artificielle (IA)</p>
+                    <p><strong>Description de la formation :</strong> Cette formation vous initiera aux concepts fondamentaux de l'intelligence artificielle...</p>
+                </div>
             </div>
         </section>
 
